@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetInfo - Login</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <link rel="stylesheet" href="./src/styles/globalStyles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <!-- SCRIPTS -->
+    <script type="module" src="./src/scripts/index.js" defer></script>
+    
+  </head>
+  <body>
+    <main class="main">
+      <section class="main-section">
+        <div class="main-section__left">
+          <h2>Petinfo</h2>
+          <h2><span class="blue-span">Amor</span> e <span class="blue-span">carinho</span> por meio do conhecimento</h2>
+          <p>Todas as informações para melhorar a vida do seu pet em um só lugar</p>
+          <img src="./src/assets/img/img-login.svg">
+        </div>
+        
+        <form class="main-section__form">
+          <h3>Login</h3>
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Digite seu email...">
+          <label for="password">Senha</label>
+          <input type="password" id="password" name="password" placeholder="Digite sua senha...">
+          <p class="invisible">Email ou senha incorretos, tente novamente</p>
+          <button id="btn-join">Acessar</button>
+          <h4>Ainda não possui conta?</h4>
+          <p>Clicando no botão abaixo, você pode se cadastrar rapidamente</p>
+          <button id="btn-register">Cadastrar</button>
+        </form>
+      </section>
+    </main>
+  </body>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</html>

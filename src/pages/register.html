@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetInfo - Cadastro</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="/src/styles/reset.css">
+    <link rel="stylesheet" href="/src/styles/register.css">
+    <link rel="stylesheet" href="/src/styles/globalStyles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <!-- SCRIPTS -->
+    <script type="module" src="/src/scripts/register.js" defer></script>
+    
+  </head>
+  <body>
+    <main class="main">
+      <section class="main-section">
+        <div class="main-section__form">
+          <h3>Cadastro</h3>
+          <label for="username">Usuário</label>
+          <input type="text" id="username" name="username" placeholder="Digite seu usuário aqui">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Digite seu email aqui">
+          <label for="img">Link da foto do perfil</label>
+          <input type="text" id="avatar" name="avatar" placeholder="Insira o link aqui">
+          <label for="password">Senha</label>
+          <input type="password" id="password" name="password" placeholder="Digite sua senha aqui">
+          <button id="btn-register">Cadastrar</button>
+          <button id="btn-back">Voltar para o login</button>
+        </div>
+
+        <div class="main-section__right">
+          <h2>Petinfo</h2>
+          <h2><span class="blue-span">Ooooooba!</span></h2>
+          <p>Agora vamos poder contribuir para o bem estar do seu pet por meio do conhecimento</p>
+          <img src="/src/assets/img/img-register.svg">
+        </div>
+
+      </section>
+    </main>
+  </body>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</html>

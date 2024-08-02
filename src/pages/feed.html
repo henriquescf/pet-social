@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petinfo - Feed</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="/src/styles/reset.css">
+    <link rel="stylesheet" href="/src/styles/feed.css">
+    <link rel="stylesheet" href="/src/styles/globalStyles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <!-- SCRIPTS -->
+    <script type="module" src="/src/scripts/feed.js" defer></script>
+
+  </head>
+  <body>
+    <header class="header">
+      <h2>Petinfo</h2>
+      <div class="header__div">
+        <button id="btn-newpub">Criar publicação</button>
+        <!-- NEW POST MODAL -->
+        <dialog id="modalPostController">
+          <div id="modalPostContainer">
+            <h2>Criando novo post</h2>
+            <label for="title">Título do post</label>
+            <input id="title" type="text" placeholder="Digite o título aqui...">
+            <label for="content">Conteúdo do post</label>
+            <textarea id="content" rows="4" cols="50" style="resize: none" placeholder="No que você está pensando hoje..."></textarea>
+            <div class="modal__btns">
+              <button id="btn-cancel">Cancelar</button>
+              <button id="btn-publish">Publicar</button>
+            </div>
+          </div>
+        </dialog>
+
+        <div class="profile-dropdown">
+          <a class="profile-dropdown__menu"><img></a>
+          <div class="logout-dropdown">
+            <a class="logout-dropdown__username">@undefined</a>
+            <a id="logout-dropdown__btn"><img src="/src/assets/img/sign-out-alt-black.svg"><span>Sair da conta</span></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__div">
+        <h3>Feed</h3>
+      </div>
+
+      <section class="main__section">
+        <!-- SHOW FULL POST MODAL -->
+        <dialog id="modalFullPostController">
+          <div id="modalFullPostContainer">
+            <button id="exit-btn">X</button>
+          </div>
+        </dialog>
+
+        <!-- EDIT POST MODAL -->
+        <dialog id="modalEditController">
+          <div id="modalEditContainer">
+            <h2>Edição</h2>
+            <label for="edit-title">Título do post</label>
+            <input id="edit-title" type="text">
+            <label for="edit-content">Conteúdo do post</label>
+            <textarea id="edit-content" rows="4" cols="50" style="resize: none"></textarea>
+            <div class="modal__btns3">
+              <button id="btn-cancel3">Cancelar</button>
+              <button id="btn-publish2">Salvar Alterações</button>
+            </div>
+          </div>
+        </dialog>
+
+        <!-- DELETE POST MODAL -->
+        <dialog id="modalDelController">
+          <div id="modalDelContainer">
+            <h2>Confirmação de exclusão</h2>
+            <p>Tem certeza que deseja excluir este post?</p>
+            <p>Essa ação não poderá ser desfeita, então pedimos que tenha cautela antes de concluir</p>
+            <div class="modal__btns2">
+              <button id="btn-cancel2">Cancelar</button>
+              <button id="btn-delete">Sim, excluir esse post</button>
+            </div>
+          </div>
+        </dialog>
+
+        <ul>
+        </ul>
+      </section>
+    </main>
+    
+  </body>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</html>

@@ -1,0 +1,38 @@
+:root{
+    --primary-brand-color: #364FC7;
+    --secondary-brand-color: #3B56D9;
+
+    --primary-sucess-color: #087F5B;
+
+    --primary-alert-color: #C73650;
+    --secondary-alert-color: #DB3C58;
+
+    --primary-grey-color: #212529;
+    --secondary-grey-color: #343A40;
+    --tertiary-grey-color: #495057;
+    --quaternary-grey-color: #868E96;
+    --quinary-grey-color: #ADB5BD;
+    --senary-grey-color: #E9ECEF;
+    --septenary-grey-color: #F1F3F5;
+    --octonary-grey-color: #F8F9FA;
+    --nonary-grey-color: #FCFEFF;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-grey-color);
+}
+
+h1, h2{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+h4{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+p{
+    color: var(--tertiary-grey-color);
+}
